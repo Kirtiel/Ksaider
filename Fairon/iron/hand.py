@@ -25,9 +25,7 @@ async def get_help(message: Message):
 @router.message(F.text == "Как дела?")
 async def how_are_you(message: Message):
     await message.answer("Ок!")
-#@dp.message(F.photo)
-#async def get_photo(message: Message):
-    #await message.answer(f"ID фото: {message.photo[-1].file_id}")
+
 
 @router.message(Command("get_photo"))
 async def get_photo(message: Message):
